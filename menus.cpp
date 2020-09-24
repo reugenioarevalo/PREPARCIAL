@@ -14,6 +14,7 @@
 #include "rlutil.h"
 #include "reportes.h"
 #include "preparcial.h"
+#include "parcial.h"
 
 using namespace rlutil;
 using namespace std;
@@ -30,6 +31,7 @@ void menu(){
         cout<<"3 - REPORTES"<<endl;
         cout<<"4 - CONFIGURACION"<<endl;
         cout<<"5 - PRE PARCIAL"<<endl;
+        cout<<"6 - PARCIAL"<<endl;
         cout<<"------------------------"<<endl;
         cout<<"0 - SALIR   "<<endl;
         int opcion;
@@ -50,6 +52,9 @@ void menu(){
             break;
         case 5:
             menuPreparcial();
+            break;
+        case 6:
+            menuParcial();
             break;
             case 0:
             return;
@@ -200,6 +205,35 @@ int opcion;
             break;
         case 2:
            listarRutinaIdxAnio();
+            break;
+        case 0:
+            return;
+        default:
+            break;
+        }
+    } while (opcion != 0);
+}
+
+void menuParcial(){
+int opcion;
+        do {
+        cls();
+        title("MENU PRIMER PARCIAL", 10, GREEN);
+        gotoxy(1, 3);
+        cout << "--------------------------------" << endl;
+        cout << "1) PROMEDIO DE PESO" << endl;
+        cout << "2) MAYOR TIEMPO PROMEDIO ENTRENADO" << endl;
+        cout << "--------------------------------" << endl;
+        cout << "0) VOLVER AL MENU PRINCIPAL" << endl;
+        cout << "> ";
+        cin >> opcion;
+        system("cls");
+        switch (opcion){
+        case 1:
+            promPeso();
+            break;
+        case 2:
+           mayorTiempoEntrenado();
             break;
         case 0:
             return;

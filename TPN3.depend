@@ -171,7 +171,7 @@
 1600341535 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\usuarios.h
 	"fechas.h"
 
-1600912100 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.h
+1600989899 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.h
 
 1600341535 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\ui.h
 
@@ -189,7 +189,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1600619068 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\main.cpp
+1600990341 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\main.cpp
 	<iostream>
 	<cstdio>
 	<stdlib.h>
@@ -204,8 +204,10 @@
 	"fechas.h"
 	"ui.h"
 	"rlutil.h"
+	"preparcial.h"
+	"parcial.h"
 
-1600913102 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.cpp
+1600990180 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.cpp
 	<iostream>
 	<cstdio>
 	<stdlib.h>
@@ -222,6 +224,7 @@
 	"rlutil.h"
 	"reportes.h"
 	"preparcial.h"
+	"parcial.h"
 
 1600827062 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\reportes.h
 
@@ -281,4 +284,43 @@
 	"rlutil.h"
 
 1600913699 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\preparcial.h
+
+1600918170 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\preparcial.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+	"reportes.h"
+	"preparcial.h"
+
+1600990402 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\parcial.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+	"reportes.h"
+	"preparcial.h"
+	"parcial.h"
+
+1600990225 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\parcial.h
 

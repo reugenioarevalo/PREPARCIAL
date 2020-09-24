@@ -12,18 +12,13 @@
 #include "fechas.h"
 #include "ui.h"
 #include "rlutil.h"
+#include "reportes.h"
 #include "preparcial.h"
 #include "parcial.h"
 
 using namespace rlutil;
 using namespace std;
 
-int main(){
+void promPeso(){}
 
-    menu();
-
-return 0;
-}
-
-
-
+void mayorTiempoEntrenado(){}

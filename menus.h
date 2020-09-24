@@ -7,6 +7,7 @@ void menuRutinas();
 void menuConfig();
 void developers();
 void menuPreparcial();
+void menuParcial();
 
 
 
