@@ -2,6 +2,6 @@
 #define PREPARCIAL_H_INCLUDED
 
 void promRutina();
-//void puntoBpp();
+void listarRutinaIdxAnio();
 
 #endif // PREPARCIAL_H_INCLUDED

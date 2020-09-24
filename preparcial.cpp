@@ -61,3 +61,27 @@ void promRutina(){
 
 }
 
+void listarRutinaIdxAnio(){
+    FILE *p;
+    Rutina regRut;
+    Usuario regUs;
+    int idUsuario, anio, cantidad;
+    title("LISTADO POR ID Y POR ANIO ");
+    gotoxy(1,3);
+
+    cout<<"\nIngrese el ID  de usuario a listar:";
+    cin>>idUsuario;
+    cout<<"\nIngrese el anio de rutina a listar:";
+    cin>>anio;
+
+    regUs= leerUsuario(buscarID(idUsuario));
+    cantidad=cantRutinasUsuario(idUsuario, anio);
+    cls();
+    title("LISTADO POR ID Y POR ANIO ");
+    gotoxy(1,3);
+    cout<<regUs.apellidos<<" "<<regUs.nombres;
+    cout<<" tiene: "<<cantidad<<" Rutinas en el anio: "<<anio<<endl;
+    anykey();
+
+
+}

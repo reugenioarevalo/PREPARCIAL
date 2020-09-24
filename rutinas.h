@@ -35,4 +35,6 @@ int contarRutinas(); /// Cuenta cuantas rutinas hay en el archivo
 
 void listarRutinaXIdUsuario(); /// Lista todas las rutinas de un usuario que recibe por ID de usuario
 
+int cantRutinasUsuario(int id, int anio);///Devuelve la cantidad de rutinas de un usuario y recibe por parametro un Id
+
 #endif // RUTINAS_H_INCLUDED

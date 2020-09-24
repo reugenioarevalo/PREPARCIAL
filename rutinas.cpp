@@ -405,3 +405,20 @@ void listarRutinaXIdUsuario(){
         return;
 }
 
+int cantRutinasUsuario(int id, int anio){
+    FILE *p;
+    Rutina reg;
+    int cantRutinas=0;
+
+    p=fopen(FILE_RUTINAS,"rb");
+    if(p==NULL){
+            return - 1 ;
+        }
+    while(fread(&reg,sizeof(Rutina),1,p)==1){
+        if(reg.idUsuario==id && reg.fechaRutina.anio==anio){
+            cantRutinas++;
+        }
+    }
+    fclose(p);
+    return cantRutinas;
+}

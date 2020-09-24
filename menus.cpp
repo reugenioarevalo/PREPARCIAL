@@ -199,7 +199,7 @@ int opcion;
             promRutina();
             break;
         case 2:
-           //puntoBpp();
+           listarRutinaIdxAnio();
             break;
         case 0:
             return;

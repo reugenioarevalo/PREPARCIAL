@@ -162,7 +162,7 @@
 	"ui.h"
 	"rlutil.h"
 
-1600619052 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rutinas.h
+1600913699 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rutinas.h
 	"fechas.h"
 	"usuarios.h"
 
@@ -205,7 +205,7 @@
 	"ui.h"
 	"rlutil.h"
 
-1600912121 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.cpp
+1600913102 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.cpp
 	<iostream>
 	<cstdio>
 	<stdlib.h>
@@ -242,7 +242,7 @@
 	"rlutil.h"
 	"reportes.h"
 
-1600830083 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rutinas.cpp
+1600913737 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rutinas.cpp
 	<iostream>
 	<cstdio>
 	<stdlib.h>
@@ -280,5 +280,5 @@
 	"ui.h"
 	"rlutil.h"
 
-1600911577 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\preparcial.h
+1600913699 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\preparcial.h
 
