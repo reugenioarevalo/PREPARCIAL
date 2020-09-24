@@ -21,7 +21,7 @@ const char *RUTINAS = "archivos/Entrenamientos.dat";
 
 void promRutina(){
     FILE *p;
-    Rutina reg, *vRutina;
+    Rutina  *vRutina;
     float prom;
     int cuantas, acuTime=0, cont;
 
@@ -41,7 +41,6 @@ void promRutina(){
 
         fread(vRutina, sizeof(Rutina), cuantas, p);
         fclose(p);
-
 
         for(int i =0 ; i<cuantas; i++){
             acuTime +=vRutina[i].tiempo;
@@ -63,7 +62,6 @@ void promRutina(){
 
 void listarRutinaIdxAnio(){
     FILE *p;
-    Rutina regRut;
     Usuario regUs;
     int idUsuario, anio, cantidad;
     title("LISTADO POR ID Y POR ANIO ");
