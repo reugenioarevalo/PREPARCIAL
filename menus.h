@@ -6,6 +6,7 @@ void menuUsuarios();
 void menuRutinas();
 void menuConfig();
 void developers();
+void menuPreparcial();
 
 
 

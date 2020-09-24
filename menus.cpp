@@ -13,6 +13,7 @@
 #include "ui.h"
 #include "rlutil.h"
 #include "reportes.h"
+#include "preparcial.h"
 
 using namespace rlutil;
 using namespace std;
@@ -28,6 +29,7 @@ void menu(){
         cout<<"2 - ENTRENAMIENTOS"<<endl;
         cout<<"3 - REPORTES"<<endl;
         cout<<"4 - CONFIGURACION"<<endl;
+        cout<<"5 - PRE PARCIAL"<<endl;
         cout<<"------------------------"<<endl;
         cout<<"0 - SALIR   "<<endl;
         int opcion;
@@ -45,6 +47,9 @@ void menu(){
             break;
         case 4:
             menuConfig();
+            break;
+        case 5:
+            menuPreparcial();
             break;
             case 0:
             return;
@@ -175,4 +180,31 @@ int opcion;
     } while (opcion != 0);
 }
 
-
+void menuPreparcial(){
+int opcion;
+        do {
+        cls();
+        title("MENU CONFIGURACION", 0, 42);
+        gotoxy(1, 3);
+        cout << "--------------------------------" << endl;
+        cout << "1) PUNTO A" << endl;
+        cout << "2) PUNTO B" << endl;
+        cout << "--------------------------------" << endl;
+        cout << "0) VOLVER AL MENU PRINCIPAL" << endl;
+        cout << "> ";
+        cin >> opcion;
+        system("cls");
+        switch (opcion){
+        case 1:
+            promRutina();
+            break;
+        case 2:
+           //puntoBpp();
+            break;
+        case 0:
+            return;
+        default:
+            break;
+        }
+    } while (opcion != 0);
+}

@@ -147,3 +147,138 @@
 	"ui.h"
 	"rlutil.h"
 
+1600619057 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\fechas.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+
+1600619052 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rutinas.h
+	"fechas.h"
+	"usuarios.h"
+
+1600465717 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\fechas.h
+
+1600341535 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\usuarios.h
+	"fechas.h"
+
+1600912100 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.h
+
+1600341535 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\ui.h
+
+1600341535 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1600619068 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\main.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+
+1600912121 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\menus.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+	"reportes.h"
+	"preparcial.h"
+
+1600827062 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\reportes.h
+
+1600832198 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\reportes.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+	"reportes.h"
+
+1600830083 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\rutinas.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+
+1600341535 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1600619082 source:d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\usuarios.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	"rutinas.h"
+	"usuarios.h"
+	"menus.h"
+	"fechas.h"
+	"ui.h"
+	"rlutil.h"
+
+1600911577 d:\reuge\documents\utn\2do cuatri\lab2\pre parcial\preparcial\preparcial.h
+
