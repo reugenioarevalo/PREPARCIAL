@@ -44,13 +44,29 @@ Rutina rutXidUs(int idUsuario){
 
 }
 ///*Para cada perfil, indicar el promedio de peso.*/
-void promPeso(){}
+void promPeso(){
+    Usuario regAux, reg;
+    float pesoA=0, pesoB=0, pesoC=0;
+    int contA=0, contB=0, contC=0;
+    for(int i=0; i< 6; i++){
+        regAux = leerUsuario(i);
+        switch(regAux.perfAct){
+            case 'A': pesoA +=regAux.peso; contA++;break;
+            case 'B': pesoB +=regAux.peso; contB++; break;
+            case 'C': pesoC +=regAux.peso; contC++;break;
+            default: break;
+        }
+
+    }
+       cout<<"PARA EL PERFIL A EL PESO PROMEDIO ES: "<<pesoA/contA<<" KG."<<endl;       cout<<"PARA EL PERFIL B EL PESO PROMEDIO ES: "<<pesoB/contB<<" KG."<<endl;       cout<<"PARA EL PERFIL C EL PESO PROMEDIO ES: "<<pesoC/contC<<" KG."<<endl;
+    anykey();
+}
 
 ///*Listar apellidos y nombres del usuario que más tiempo en promedio haya entrenado.*/
 void mayorTiempoEntrenado(){
 
     Rutina *vec;
-    Rutina rutinaPorUs;
+    Rutina rutinaPorUs, reg;
     int *tiemp;
    int  cant_user=0;
     int cant_rutinas=0;
@@ -72,14 +88,16 @@ void mayorTiempoEntrenado(){
         }
     }
     vacio(tiemp, cant_user );
-    for(int i=0; i< cant_user; i++){
-            for(int j=0; j< cant_rutinas; j++){
-                rutinaPorUs= rutXidUs(vec[i].idUsuario);
-                if(vec[i].idUsuario==rutinaPorUs.idUsuario){
-                    tiemp[i]+=rutinaPorUs.tiempo;
+
+            for(int k=0; k< cant_user; k++){
+                for(int j=0; j< cant_rutinas; j++){
+                rutinaPorUs= rutXidUs(vec[j].idUsuario);
+                if(vec[j].idUsuario==rutinaPorUs.idUsuario ){
+                cout<<vec[j].idUsuario<<endl;
+
+                    tiemp[k]+=rutinaPorUs.tiempo;
                 }
             }
-        cout<<tiemp[i]<<endl;
         }
     }
 
