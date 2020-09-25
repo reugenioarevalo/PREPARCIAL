@@ -60,13 +60,16 @@ void promPeso(){
         }
 
     }
+                title("PROMEDIO DE PESO SEGUN PERFIL DE ACTIVIDAD", 10, GREEN);
+            gotoxy(1, 3);
+
        cout<<"PARA EL PERFIL A EL PESO PROMEDIO ES: "<<pesoA/contA<<" KG."<<endl;       cout<<"PARA EL PERFIL B EL PESO PROMEDIO ES: "<<pesoB/contB<<" KG."<<endl;       cout<<"PARA EL PERFIL C EL PESO PROMEDIO ES: "<<pesoC/contC<<" KG."<<endl;
     anykey();
 }
 
 ///*Listar apellidos y nombres del usuario que más tiempo en promedio haya entrenado.*/
 void mayorTiempoEntrenado(){
-
+    Usuario reguser;
     Rutina *vec;
     Rutina rutinaPorUs;
     float promMax=0;
@@ -113,7 +116,10 @@ void mayorTiempoEntrenado(){
             }
             prom=0;
         }
-                cout<<" El Promedio Max es "<<promMax<<" corresponde al usuario  "<<us<<" " <<endl;
+            reguser=leerUsuario(buscarID(us));
+            title("PROMEDIO DE ENTRENAMIENTO POR TIEMPO MAXIMO", 10, GREEN);
+            gotoxy(1, 3);
+                cout<<"Usuario:  "<<strupr(reguser.nombres)<<" "<<strupr(reguser.apellidos)<<" tiempo promedio de entrenamiento: "<<promMax<<endl;
     }
     else{
         cout<<"Hubo un error al reportar.";
