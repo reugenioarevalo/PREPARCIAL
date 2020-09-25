@@ -23,7 +23,7 @@ void vacio(int *v, int t){
         v[i] = 0;
     }
 }
-Rutina rutXidUs(int idUsuario){
+Rutina rutXidUs(int id){
       FILE *p;
     int posiciones=0;
     Rutina reg, err;
@@ -34,7 +34,7 @@ Rutina rutXidUs(int idUsuario){
             return err ;
         }
     while(fread(&reg,sizeof (Rutina),1,p)==1){
-            if(reg.idUsuario==idUsuario){
+            if(reg.id==id){
                 return reg;
             }
     }
@@ -68,11 +68,14 @@ void promPeso(){
 void mayorTiempoEntrenado(){
 
     Rutina *vec;
-    Rutina rutinaPorUs, reg;
+    Rutina rutinaPorUs;
+    float promMax=0;
+    float prom=0;
     int *tiemp;
-   int  cant_user=0;
-    int cant_rutinas=0;
-
+   int  cant_user=0, us=0;
+    int cant_rutinas=0, cant_userU, cuantos=0;
+    cant_userU=contarRegistro();
+    int vecUs[cant_userU], vecCuanto[cant_userU]={0};
     cant_rutinas=contarRutinas();
 
     tiemp = (int *) malloc(sizeof(int) * cant_rutinas);
@@ -86,23 +89,32 @@ void mayorTiempoEntrenado(){
    if(leer_rutina(vec, cant_rutinas) == cant_rutinas){
     for(int i=0; i< cant_rutinas; i++){
         if(vec[i].idUsuario != vec[i+1].idUsuario){
+             vecUs[cant_user]=vec[i].idUsuario;
             cant_user++;
         }
     }
+
     vacio(tiemp, cant_user );
-
-            for(int k=0; k< cant_user; k++){
-                for(int j=0; j< cant_rutinas; j++){
-                rutinaPorUs= rutXidUs(vec[j].idUsuario);
-                if(vec[j].idUsuario==rutinaPorUs.idUsuario ){
-                cout<<vec[j].idUsuario<<endl;
-
-                    tiemp[k]+=rutinaPorUs.tiempo;
+            for(int i=0; i< cant_user; i++){
+                for(int j=0; j<= cant_rutinas; j++){
+                rutinaPorUs= rutXidUs(vec[j].id);
+                if(vecUs[i]==rutinaPorUs.idUsuario ){
+                    tiemp[i]=tiemp[i]+rutinaPorUs.tiempo;
+                    vecCuanto[i]++;
                 }
             }
-        }
-    }
 
+        }
+        for(int i=0; i<cant_user; i++){
+            prom =(float)tiemp[i]/vecCuanto[i];
+            if(promMax==0 || prom>promMax){
+                promMax=prom;
+                us=vecUs[i];
+            }
+            prom=0;
+        }
+                cout<<" El Promedio Max es "<<promMax<<" corresponde al usuario  "<<us<<" " <<endl;
+    }
     else{
         cout<<"Hubo un error al reportar.";
     }
