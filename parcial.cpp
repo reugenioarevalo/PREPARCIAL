@@ -47,8 +47,10 @@ Rutina rutXidUs(int idUsuario){
 void promPeso(){
     Usuario regAux, reg;
     float pesoA=0, pesoB=0, pesoC=0;
-    int contA=0, contB=0, contC=0;
-    for(int i=0; i< 6; i++){
+    int contA=0, contB=0, contC=0, cantU;
+    cantU=contarRegistro();
+    cout<<cantU<<endl;
+    for(int i=0; i< cantU; i++){
         regAux = leerUsuario(i);
         switch(regAux.perfAct){
             case 'A': pesoA +=regAux.peso; contA++;break;
